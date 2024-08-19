@@ -1,0 +1,23 @@
+.blogPostsListPage {
+	@extend %pageStyle;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	@extend %parallax;
+	position: relative;
+
+	&__content {
+		width: 950px;
+		display: flex;
+    	flex-direction: column;
+    	align-items: center;
+	}
+}
+
+@media (max-width: $bp-l) {
+	.blogPostsListPage {	
+		&__content {
+			width: 100%;
+		}
+	}
+}

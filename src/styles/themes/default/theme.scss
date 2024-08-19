@@ -1,0 +1,31 @@
+@import '../variables';
+@import '../normalize';
+@import '../fonts';
+@import '../mixins';
+@import '../global';
+
+@import './pages/mainPage.scss';
+@import './pages/pageAbout.scss';
+@import './pages/contactPage.scss';
+@import './pages/aboutAndContactPage.scss';
+
+@import './templates/blogPost.scss';
+@import './templates/blogPostsList.scss';
+@import './templates/fancyBlogPostsList.scss';
+
+@import './components/header.scss';
+@import './components/footer.scss';
+@import './components/columns.scss';
+@import './components/bottomImg.scss';
+@import './components/weeklyPicks.scss';
+@import './components/heartsCounter.scss';
+@import './components/viewsCounter.scss';
+@import './components/separator.scss';
+@import './components/blogNavigation.scss';
+@import './components/blogPostPreview.scss';
+@import './components/recentPosts.scss';
+@import './components/blogPostsList.scss';
+@import './components/socialIcons.scss';
+
+@import 'slick-carousel/slick/slick.css';
+@import 'slick-carousel/slick/slick-theme.css';

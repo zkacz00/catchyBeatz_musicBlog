@@ -1,0 +1,10 @@
+.bottomImg {
+	width: 100%;
+	background-color: transparent;
+}
+
+@media (max-width: $bp-s) {
+	.bottomImg {
+		width: 150%;
+	}
+}

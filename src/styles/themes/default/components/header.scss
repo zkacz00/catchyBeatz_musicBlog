@@ -1,0 +1,222 @@
+.header {
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 100;
+   display: flex;
+   background-color: $c-black;
+   height: 100px;
+   width: 100%;
+   padding: 0 50px 0 30px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   box-shadow: 0px 0px 8px $c-boulder;
+
+   &__logo {
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      position: relative;
+
+      &:hover > .header__logoText p {
+         color: $c-boulder;
+      }
+   }
+
+   &__gif {
+      position: absolute;
+      height: 80%;
+      left: 0;
+      transition: opacity .1s ease;
+
+      &--trueVisible {
+         opacity: 1;
+      }
+
+      &--falseVisible {
+         opacity: 0;
+      }
+   }
+
+   &__logoText {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 160px;
+
+      h1 {
+         @extend %fontSizeH2;
+         margin: 0;
+         width: max-content;
+      }
+
+      p {
+         transition: color .2s ease-out;
+         @extend %fontSizeP--s;
+         margin: 0;
+      }
+   }
+
+   &__menu {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+   }
+
+   &__menuImg {
+      width: 40px;
+      margin-right: 15px;
+      cursor: pointer;
+   }
+
+   &__menuEl {
+      border-right: 2px solid $c-white;
+      padding: 0 20px;
+
+      &:last-of-type {
+         border-right: none;
+         padding-right: 0;
+      }
+
+      a {
+         text-transform: uppercase;
+         @extend %fontSizeP--s;
+         cursor: pointer;
+         transition: color 0.2s ease-in;
+         
+         &:hover {
+            color: $c-bright-red;
+         }
+      }
+   }
+   &__canvasOffMenu {
+      z-index: 200;
+      position: fixed;
+      height: 100vh;
+      width: 60vw;
+      top: 90px;
+      background-color: white;
+      transition: right 0.4s ease-out;
+      filter: drop-shadow(2px 4px 6px black);
+      display: flex;
+      flex-direction: column;
+      padding-top: 30px;
+
+      &--false {
+         right: -100%;
+      }
+
+      &--true {
+         right: 0;
+      }
+
+      & .header__menuEl {
+         margin: 0 20px;
+         padding: 0;
+         border-right: none;
+         border-bottom: 1px solid $c-mine-shaft--075;
+         a {
+            text-decoration: none;
+            color: black;
+            @extend %fontSizeP--xxs;
+            height: 100%;
+            width: 100%;
+            display: block;
+            padding: 15px 0;
+         }
+
+         &:last-of-type {
+            border: none;
+         }
+      }
+   }
+
+   &__pageFilter {
+      position: fixed;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      background-color: black;
+      transition: opacity 0.6s ease-out;
+
+      &--false {
+         z-index: -90;
+         opacity: 0;
+      }
+
+      &--true {
+         z-index: 90;
+         opacity: 0.5;
+      }
+   }
+}
+
+@media (max-width: $bp-xl) {
+   .header {
+      padding: 0 20px 0 10px;
+      height: 90px;
+
+      &__logoText {
+         margin-left: 130px;
+      }
+
+      &__gif {
+         height: 70%;
+      }
+
+      &__canvasOffMenu {
+         top: 90px;
+      }
+   }
+}
+
+@media (max-width: $bp-m) {
+   .header {
+      height: 60px;
+
+      &__gif {
+         height: 60%;
+      }
+
+      &__logoText { 
+         margin-left: 75px;
+
+         p {
+            display: none;
+         }
+      }
+
+      &__menuImg {
+         width: 30px;
+         margin-right: 0;
+      }
+
+      &__canvasOffMenu {
+         top: 60px;
+      }
+   }
+}
+
+@media (max-width: $bp-s) {
+   .header {
+      padding: 0;
+
+      &__logo img {
+         display: none;
+      }
+
+      &__logoText { 
+         margin-left: 10px;
+      }
+
+      &__menuImg {
+         width: 20px;
+         margin-right: 10px;
+      }
+   }
+}

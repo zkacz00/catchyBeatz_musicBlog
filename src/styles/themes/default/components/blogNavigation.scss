@@ -1,0 +1,43 @@
+.blogNavigation {
+   width: 100%;
+   margin: 30px 0;
+
+   a {
+      @extend %fontSizeP--xs;
+   	margin-right: 20px;
+   	
+   	&:last-of-type {
+   		margin-right: 0;
+   	}
+   }
+}
+
+@media (max-width: $bp-l) {
+   .blogNavigation {
+      width: 90%;
+      margin: 20px 0;
+   }
+}
+
+@media (max-width: $bp-m) {
+   .blogNavigation {      
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      a {
+         margin: 5px;
+
+         &:last-of-type {
+            margin: 5px;
+         }
+      }
+   }
+}
+
+@media (max-width: $bp-s) {
+   .blogNavigation {
+      margin: 15px 0;
+   }
+}

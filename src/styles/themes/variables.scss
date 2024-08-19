@@ -1,0 +1,27 @@
+//colors
+$c-black : rgba(0, 0, 0, 1);
+$c-black--09 : rgba(0, 0, 0, 0.9);
+$c-black--07 : rgba(0, 0, 0, 0.7);
+$c-mine-shaft : rgba(51, 51, 51, 1);
+$c-mine-shaft--075 : rgba(51, 51, 51, 0.75);
+$c-boulder : rgba(120, 120, 120, 1);
+$c-white : rgba(255, 255, 255, 1);
+$c-white--075 : rgba(255, 255, 255, 0.75);
+$c-bright-red : rgba(175, 0, 5, 1);
+$c-bright-red--075 : rgba(175, 0, 5, 0.75);
+$c-chestnut-rose : rgba(201, 83, 87, 1);
+$c-chestnut-rose--07 : rgba(201, 83, 87, 0.5);
+$c-vin-rouge : rgba(152, 70, 95, 1);
+
+//breakpoints
+$bp-xl : 1201px;
+$bp-l : 1025px;
+$bp-m : 769px;
+$bp-s : 481px;
+$bp-xs : 320px;
+
+// $bp-xl 1251px: 1201px Extra large screens, TV;
+// $bp-l 1101px: 1025px Desktops, large screens;
+// $bp-m : 769px Small screens, laptops;
+// $bp-s : 481px iPads, Tablets;
+// $bp-xs : 320px Mobile devices;
