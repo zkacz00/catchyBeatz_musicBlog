@@ -37,7 +37,8 @@
 		@extend %fontSizeP;
     	background-color: $c-bright-red--075;
     	opacity: 0.9;
-    	width: 180px;
+    	width: 188px;
+		padding: 0 8px;
     	height: 45px;
     	border-radius: 6px;
     	transition: background-color 0.2s ease-in;
@@ -74,6 +75,10 @@
     		width: auto;
     		padding: 20px;
     	}
+		&__button {
+			width: 156px;
+			height: 40px;
+		}
     }
 }
 
@@ -87,7 +92,7 @@
     	}
 
     	&__button {
-    		width: 150px;
+    		width: 142px;
     		height: 40px;
     	}
 	}
