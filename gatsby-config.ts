@@ -4,6 +4,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const config: GatsbyConfig = {
+  pathPrefix: "/catchyBeatz_musicBlog",
   siteMetadata: {
     title: `catchy vibez.`,
     description: `It's a blog about music!`,
