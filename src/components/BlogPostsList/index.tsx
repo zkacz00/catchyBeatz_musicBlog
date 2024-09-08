@@ -7,7 +7,7 @@ const BlogPostsList = ({content}: {content: any}) => {
    const data = useStaticQuery(
       graphql`
          query {
-            allContentfulBlogPostEl(sort: {fields: date, order: DESC}) {
+            allContentfulBlogPostEl(sort: {date: DESC}) {
               edges {
                 node {
                   author,

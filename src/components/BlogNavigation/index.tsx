@@ -7,7 +7,7 @@ const BlogNavigation = () => {
    const data = useStaticQuery(
       graphql`
          query {
-            allContentfulBlogNavigationEl(sort: {fields: order, order: ASC}) {
+            allContentfulBlogNavigationEl(sort: {order: ASC}) {
                edges {
                   node {
                      title,

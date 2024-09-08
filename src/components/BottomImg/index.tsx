@@ -6,7 +6,7 @@ const BottomImg = () => {
    const data = useStaticQuery(
       graphql`
          query {
-            allContentfulBottomImg(sort: {fields: contentful_id, order: DESC}) {
+            allContentfulBottomImg(sort: {contentful_id: DESC}) {
               edges {
                 node {
                   img {

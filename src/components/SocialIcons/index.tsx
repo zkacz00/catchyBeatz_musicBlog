@@ -7,7 +7,7 @@ const SocialIcons = () => {
    const data = useStaticQuery(
       graphql`
          query {
-            allContentfulSocialIcons(sort: {fields: order, order: ASC}) {
+            allContentfulSocialIcons(sort: {order: ASC}) {
                edges {
                   node {
                      img {

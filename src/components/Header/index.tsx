@@ -9,7 +9,7 @@ const Header = () => {
    const data = useStaticQuery(
       graphql`
          query {
-            allContentfulHeaderLogo(sort: {fields: contentful_id, order: DESC}) {
+            allContentfulHeaderLogo(sort: {contentful_id: DESC}) {
               edges {
                 node {
                   gifSlow {

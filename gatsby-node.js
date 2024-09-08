@@ -22,7 +22,7 @@ exports.createPages = async ({graphql, actions: { createPage }, reporter}) => {
                }
             }
          }
-         allContentfulColumnsEl(sort: {fields: order}) {
+         allContentfulColumnsEl(sort: {order: ASC}) {
             edges {
               	node {
               		id,

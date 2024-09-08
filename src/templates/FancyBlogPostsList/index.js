@@ -13,20 +13,22 @@ const FancyBlogPostsListPage = ({pageContext : {pageContent, backgroundImg, titl
    const data = useStaticQuery(
       graphql`
          query {
-            allContentfulAsset(filter: {title: {in: ["whiteArrowImg--left", "whiteArrowImg--right"]}}) {
+            allContentfulAsset(
+               filter: {title: {in: ["whiteArrowImg--left", "whiteArrowImg--right"]}}
+            ) {
                edges {
                   node {
-                    url
-                    title
+                     url
+                     title
                   }
                }
             }
-            allContentfulColumnsEl(sort: {fields: order}) {
+            allContentfulColumnsEl(sort: {order: ASC}) {
                edges {
                   node {
-                     type,
-                     order,
-                 }
+                     type
+                     order
+                  }
                }
             }
          }

@@ -7,7 +7,7 @@ const Columns = () => {
    const data = useStaticQuery(
       graphql`
          query {
-            allContentfulColumnsEl(sort: {fields: order}) {
+            allContentfulColumnsEl(sort: {order: ASC}) {
               edges {
                 node {
                   title,
