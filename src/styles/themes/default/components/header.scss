@@ -206,12 +206,12 @@
    .header {
       padding: 0;
 
-      &__logo img {
-         display: none;
+      &__gif {
+        height: 40%;
       }
-
+      
       &__logoText { 
-         margin-left: 10px;
+         margin-left: 50px;
       }
 
       &__menuImg {

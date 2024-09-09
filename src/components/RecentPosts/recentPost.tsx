@@ -3,7 +3,7 @@ import HeartsCounter from "../HeartsCounter";
 import ViewsCounter from "../ViewsCounter";
 import { Link } from "gatsby"
 
-const RecentPost = ({ slug, backgroundImg, title, likesNr }: Record<string, any>) => (
+const RecentPost = ({ slug, backgroundImg, title, likesNr, viewsNr }: Record<string, any>) => (
 	<div className="recentPost">
       <Link className="recentPost__img" to={`/blog/${slug}`}>
          <img src={backgroundImg.url} alt={backgroundImg.title} />
@@ -12,8 +12,8 @@ const RecentPost = ({ slug, backgroundImg, title, likesNr }: Record<string, any>
          <Link to={`/blog/${slug}`}>{title}</Link>
          <hr />
          <div className="recentPost__footer">
-            <ViewsCounter baseCount={140} />
-            <HeartsCounter baseCount={likesNr} />
+            <ViewsCounter baseCount={viewsNr} />
+            <HeartsCounter baseCount={likesNr} postId={slug} />
          </div>
       </div>
    </div>   

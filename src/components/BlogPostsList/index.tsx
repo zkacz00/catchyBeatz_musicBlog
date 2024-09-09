@@ -1,4 +1,4 @@
-import React, {useState} from "react"
+import React from "react"
 import BlogPostPreview from '../BlogPostPreview';
 import { useStaticQuery, graphql } from "gatsby"
 
@@ -18,6 +18,7 @@ const BlogPostsList = ({content}: {content: any}) => {
                   date(formatString: "MMM D, YYYY"),
                   description,
                   likesNr,
+                  viewsNr,
                   readingTime,
                   title,
                   category,

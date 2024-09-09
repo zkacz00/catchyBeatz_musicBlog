@@ -91,10 +91,10 @@ const ContactPage = () => {
                      <div className="contactPage__line"></div>
                      <h3>{contactMeData.bookVisitTitle}</h3>
                      {renderRawText(contactMeData.bookVisitContent)}
-                     <Link to={contactMeData.bookVisitLink} className="contactPage__button" 
+                     <div className="contactPage__button" 
                      style={{ textDecoration: 'none', color: 'white' }}>
                         {contactMeData.bookVisitButton}
-                     </Link>
+                     </div>
                   </div>  
                </div>
                <div className="contactPage__contentEl contactPage__contentEl--3">

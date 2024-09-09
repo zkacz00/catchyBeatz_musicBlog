@@ -2,7 +2,7 @@ import React from 'react';
 import components from '../../components';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 
-const BlogPostContent = ({ title, author, date, readingTime, category, likesNr, blogPostContent, slug, renderOptions }) => {
+const BlogPostContent = ({ title, author, date, readingTime, category, likesNr, viewsNr,blogPostContent, slug, renderOptions }) => {
 
    const {
       Layout,
@@ -41,8 +41,8 @@ const BlogPostContent = ({ title, author, date, readingTime, category, likesNr, 
                      <div className="blogPost__footer">
                         <p>{category.toUpperCase()}</p>                                
                         <div>
-                           <ViewsCounter baseCount={140} />
-                           <HeartsCounter baseCount={likesNr} />
+                           <ViewsCounter baseCount={viewsNr} />
+                           <HeartsCounter baseCount={likesNr} postId={slug} />
                         </div>
                         
                      </div>

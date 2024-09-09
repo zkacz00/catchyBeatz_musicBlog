@@ -15,6 +15,7 @@
 
 	&--0, &--2 {
 		@extend %parallax;
+		background-attachment: fixed;
 	} 	
 
 	p {
@@ -56,6 +57,7 @@
 	.column {
 		width: 100%;
 		height: 33%;
+		background-attachment: scroll;
 
 		&__line {
 			width: 100%;

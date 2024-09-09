@@ -19,6 +19,7 @@ const BlogPost = ({pageContext : {pagePath}}) => {
                      readingTime,
                      category,
                      likesNr,
+                     viewsNr,
                      blogPostContent { 
                         raw,
                         references {

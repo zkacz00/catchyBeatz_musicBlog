@@ -8,7 +8,7 @@ const config: GatsbyConfig = {
   siteMetadata: {
     title: `catchy vibez.`,
     description: `It's a blog about music!`,
-    author: `@z_kacz`,
+    author: `@zkacz00`,
     siteUrl: `https://www.yourdomain.tld`
   },
   plugins: [

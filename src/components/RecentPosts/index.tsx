@@ -15,6 +15,7 @@ const RecentPosts = ({currentSlug}: Record<string, any>) => {
                         title
                      },
                      likesNr,
+                     viewsNr,
                      title,
                      slug
                   }

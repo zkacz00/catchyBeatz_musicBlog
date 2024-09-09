@@ -46,6 +46,7 @@ export interface BlogPostPreviewData {
     readingTime: number;
     backgroundImg: BackgroundImage;
     likesNr: number;
+    viewsNr: number;
     type?: string;
     content?: string;
 }
@@ -57,6 +58,7 @@ export interface BlogPostData {
         date: string;
         description: string;
         likesNr: number;
+        viewsNr: number;
         readingTime: number;
         title: string;
         category: string;

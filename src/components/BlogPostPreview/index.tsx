@@ -4,7 +4,7 @@ import HeartsCounter from '../HeartsCounter';
 import ViewsCounter from '../ViewsCounter';
 
 const BlogPostPreview = ({slug, lastTxt, lastArrowImg, lastSlug, title, description, author, date, readingTime, 
-   backgroundImg, likesNr, type, content}: {
+   backgroundImg, likesNr, viewsNr, type, content}: {
       slug: string;
       lastTxt?: string;
       lastArrowImg: { url: string; title: string };
@@ -16,6 +16,7 @@ const BlogPostPreview = ({slug, lastTxt, lastArrowImg, lastSlug, title, descript
       readingTime: number;
       backgroundImg: { url: string; title: string };
       likesNr: number;
+      viewsNr: number;
       type?: string;
       content?: string;
     }) => {
@@ -39,8 +40,8 @@ const BlogPostPreview = ({slug, lastTxt, lastArrowImg, lastSlug, title, descript
             <div className="blogPostPreview__footer">
                <hr />
                <div>
-                  <ViewsCounter baseCount={140} />
-                  <HeartsCounter baseCount={likesNr} />
+                  <ViewsCounter baseCount={viewsNr} />
+                  <HeartsCounter baseCount={likesNr} postId={slug} />
                </div>
             </div>               
          </div>

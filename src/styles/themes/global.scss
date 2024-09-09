@@ -89,6 +89,16 @@ hr {
     font-size: 1.4em;
 }
 
+::selection {
+    background: $c-bright-red--075;
+    color: $c-white;
+}
+
+::-moz-selection {
+    background: $c-bright-red--075;
+    color: $c-white;
+}
+
 @media (max-width: $bp-xl) {
     %pageStyle {
         margin-top: 90px;

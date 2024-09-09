@@ -289,12 +289,24 @@
       &__content {
          flex-direction: column;
          padding: 0 30px;
+         gap: 24px;
       }
 
-      &__aboutMe, &__contact {
+      &__aboutMe {
          width: 100%;
          margin: 0;
          padding: 0;
+      }
+
+      &__contact {
+         width: 100%;
+         margin: 0;
+         padding: 0;
+         flex-direction: column;
+      }
+
+      input[type=submit] {
+        margin-bottom: 24px;
       }
 
       &__aboutMeImg {
