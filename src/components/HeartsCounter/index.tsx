@@ -4,17 +4,22 @@ import Heart from "react-heart";
 const HeartsCounter = ({ baseCount, postId }: { baseCount: number, postId: string }) => {
    const [heartsCount, setHeartsCount] = useState(baseCount);
    const [active, setActive] = useState(() => {
-      const saved = localStorage.getItem(`heart-${postId}`);
-      return saved ? JSON.parse(saved) : false;
+      if (typeof window !== "undefined") {
+         const saved = localStorage.getItem(`heart-${postId}`);
+         return saved ? JSON.parse(saved) : false;
+      }
+      return false;
    });
 
    useEffect(() => {
-      if (active) {
-         setHeartsCount(heartsCount + 1);
-      } else if (heartsCount > 0) {
-         setHeartsCount(heartsCount - 1);
+      if (typeof window !== "undefined") {
+         if (active) {
+            setHeartsCount(heartsCount + 1);
+         } else if (heartsCount > 0) {
+            setHeartsCount(heartsCount - 1);
+         }
+         localStorage.setItem(`heart-${postId}`, JSON.stringify(active));
       }
-      localStorage.setItem(`heart-${postId}`, JSON.stringify(active));
    }, [active]);
 
    return (
