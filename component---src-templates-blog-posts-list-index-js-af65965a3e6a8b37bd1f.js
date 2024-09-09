@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkproject4=self.webpackChunkproject4||[]).push([[690],{8852:function(e,t,n){n.r(t);var a=n(6540),l=n(2246);t.default=e=>{let{pageContext:{pageContent:t}}=e;const{Layout:n,BlogNavigation:s,BlogPostsList:o}=l.A;return a.createElement(n,null,a.createElement("div",{className:"blogPostsListPage"},a.createElement("div",{className:"blogPostsListPage__content"},a.createElement(s,null),a.createElement(o,{content:t}))))}}}]);
+//# sourceMappingURL=component---src-templates-blog-posts-list-index-js-af65965a3e6a8b37bd1f.js.map
