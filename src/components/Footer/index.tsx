@@ -86,7 +86,7 @@ const Footer = () => {
             <Contact {...contentfulFooterContact} contentfulFooterMail={contentfulFooterMail} />
          </div>
          <div className="footer__footer">
-            <p>Site developed by {contentfulSiteAuthor.name} &copy; {new Date().getFullYear().toString()}{" "}</p>
+            <p>Site developed by {contentfulSiteAuthor.name}</p>
          </div>
       </div>
    )
