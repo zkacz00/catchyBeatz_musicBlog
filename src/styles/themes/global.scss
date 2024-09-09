@@ -7,6 +7,7 @@ body {
     font-size: 62.5%;
     color: $c-white;
     background-color: $c-black;
+    -webkit-tap-highlight-color: transparent;
 }
 
 hr {
@@ -24,6 +25,7 @@ hr {
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
+    transition: all 0.5s ease-in-out;
 }
 
 %counter {
@@ -108,6 +110,7 @@ hr {
     background: $c-bright-red--075;
     color: $c-white;
 }
+
 
 @media (max-width: $bp-xl) {
     %pageStyle {
