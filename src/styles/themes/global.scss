@@ -23,10 +23,11 @@ hr {
 %parallax {
     position: relative;
     overflow: hidden;
-    height: 100vh;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
+    @include vh-fix;
+    height: calc(100vw * 1.333 - 9%);
 }
 
 %counter {
