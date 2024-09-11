@@ -21,11 +21,13 @@ hr {
 }
 
 %parallax {
+    position: relative;
+    overflow: hidden;
+    // height: 100vh;
     background-attachment: fixed;
-    background-position: top;
-    background-repeat: no-repeat;
     background-size: cover;
-    transition: all 0.5s ease-in-out;
+    background-position: center;
+    will-change: transform; 
 }
 
 %counter {
